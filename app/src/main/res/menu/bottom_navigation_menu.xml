@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_foryou"
+        android:title="@string/navigation_for_you"
+        android:icon="@drawable/ic_adjust"/>
+    <item
+        android:id="@+id/ction_map"
+        android:title="@string/navigation_map"
+        android:icon="@drawable/ic_map"/>
+    <item
+        android:id="@+id/action_fab"
+        android:title="@string/navigation_fab"
+        android:icon="@drawable/ic_favorite"/>
+    <item
+        android:id="@+id/action_nearme"
+        android:title="@string/navigation_explorer"
+        android:icon="@drawable/ic_explore"/>
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/navigation_profile"
+        android:icon="@drawable/ic_person_outline"/>
+</menu>

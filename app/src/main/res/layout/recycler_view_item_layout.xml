@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/room"
+            android:scaleType="centerCrop"/>
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="$ 12,000"
+            android:backgroundTint="@color/icons"
+            app:cornerRadius="15dp"
+            android:gravity="center"
+            android:layout_alignBottom="@id/imageView"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_margin="15dp"/>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/icons"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/mainLayout"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_near_me"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="West minster, Londom"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primaryText"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ac_unit"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3200 sqft"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primaryText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_taxi"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 bedrooms"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/primaryText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/main_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg">
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textAutoComplete"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:windowSoftInputMode="adjustPan|adjustResize"
+        android:hint="Search "
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:focusable="false"
+       />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_favorite"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_adjust"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_explore"/>
+
+</LinearLayout>
