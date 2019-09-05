@@ -4,11 +4,15 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
     android:layout_marginBottom="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:orientation="vertical"
         android:layout_marginBottom="15dp">
     <android.support.design.widget.CoordinatorLayout
@@ -27,6 +31,7 @@
             android:scaleType="centerCrop"/>
 
         <android.support.design.button.MaterialButton
+            android:id="@+id/btnPrice"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="$ 12,000"
@@ -38,6 +43,7 @@
             android:layout_margin="15dp"/>
     </RelativeLayout>
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNearMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/icons"
@@ -51,15 +57,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp">
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_location_on"/>
             <TextView
+                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="West minster, Londom"
+                android:padding="2dp"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/primaryText"/>
         </LinearLayout>
@@ -73,22 +82,25 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_ac_unit"/>
             <TextView
+                android:id="@+id/txtSquareFeet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3200 sqft"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/primaryText"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_local_taxi"
+                android:src="@drawable/ic_bed"
                 android:layout_marginLeft="15dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4 bedrooms"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/primaryText"/>
         </LinearLayout>
 

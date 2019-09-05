@@ -7,10 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mvp.houserenting.R;
+import com.mvp.houserenting.data.VOS.HouseVO;
 import com.mvp.houserenting.delegates.HouseItemDelegate;
 import com.mvp.houserenting.views.holders.ItemViewHolder;
 
-public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
+public class RecyclerItemAdapter extends BaseRecyclerAdapter<ItemViewHolder, HouseVO> {
     private HouseItemDelegate itemDelegate;
 
     public RecyclerItemAdapter(HouseItemDelegate itemDelegate) {
@@ -29,8 +30,4 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
 
     }
 
-    @Override
-    public int getItemCount() {
-        return 5;
-    }
 }

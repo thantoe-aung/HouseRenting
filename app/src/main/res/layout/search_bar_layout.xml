@@ -13,6 +13,7 @@
         android:background="@drawable/search_bg">
 
     <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/searchView"
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:imeOptions="flagNoExtractUi"
@@ -23,27 +24,29 @@
         android:hint="Search "
         android:background="@android:color/transparent"
         android:padding="4dp"
-        android:focusable="false"
+        android:focusable="true"
        />
 
     </LinearLayout>
     <ImageView
+        android:id="@+id/actionListView"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_favorite"
+        android:src="@drawable/ic_view_list"
         android:layout_margin="4dp"/>
     <ImageView
+        android:id="@+id/actionGridView"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_margin="4dp"
-        android:src="@drawable/ic_adjust"/>
+        android:src="@drawable/ic_pause_black"/>
     <ImageView
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_margin="4dp"
-        android:src="@drawable/ic_explore"/>
+        android:src="@drawable/ic_filter_list"/>
 
 </LinearLayout>

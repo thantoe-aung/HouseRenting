@@ -1,15 +1,42 @@
 package com.mvp.houserenting.data.VOS;
 
+import com.google.gson.annotations.SerializedName;
+
 public class HouseVO {
+    @SerializedName("id")
+    private int id;
+
+    @SerializedName("house_image_url")
     private String houseImageUrl;
+
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("description")
     private String description;
+
+    @SerializedName("price")
     private double price;
+
+    @SerializedName("address")
     private String address;
+
+    @SerializedName("square_feet")
     private double squareFeet;
+
+    @SerializedName("latitude")
     private double latitude;
+
+    @SerializedName("longitude")
     private double longitude;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getHouseImageUrl() {
         return houseImageUrl;

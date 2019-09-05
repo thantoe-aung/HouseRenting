@@ -16,7 +16,6 @@ public class HouseModelImpl extends BaseModel implements HouseModel {
     }
 
 
-
     public static HouseModelImpl getObjInstance(){
         if(objInstance == null)
             objInstance=new HouseModelImpl();
@@ -28,6 +27,9 @@ public class HouseModelImpl extends BaseModel implements HouseModel {
        mDataAgent.getHousesFromNetwork(new HouseDataAgent.GetHousesFromNetworkDelegate() {
            @Override
            public void onSuccess(List<HouseVO> houseList) {
+               for(HouseVO house : houseList){
+                   mDataRepository.put(house.getId(),house);
+               }
                dataLayerDelegate.onSuccess(houseList);
            }
 
@@ -36,6 +38,11 @@ public class HouseModelImpl extends BaseModel implements HouseModel {
                 dataLayerDelegate.onFailure(errorMessage);
            }
        });
+    }
+
+    @Override
+    public HouseVO getHouseById(int houseId) {
+        return mDataRepository.get(houseId);
     }
 
 }

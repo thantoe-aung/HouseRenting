@@ -1,12 +1,19 @@
 package com.mvp.houserenting.network.responses;
 
+import com.google.gson.annotations.SerializedName;
 import com.mvp.houserenting.data.VOS.HouseVO;
+import com.mvp.houserenting.utils.HouseConstants;
 
 import java.util.List;
 
 public class GetHouseResponse {
+    @SerializedName("message")
     private String message;
+
+    @SerializedName("code")
     private int code;
+
+    @SerializedName("data")
     private List<HouseVO> houseList;
 
     public String getMessage() {
@@ -31,5 +38,9 @@ public class GetHouseResponse {
 
     public void setHouseList(List<HouseVO> houseList) {
         this.houseList = houseList;
+    }
+
+    public boolean isResponseOk(){
+        return code== HouseConstants.EVENT_RESPONSE_OK && houseList != null;
     }
 }

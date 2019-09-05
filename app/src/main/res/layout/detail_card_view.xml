@@ -21,6 +21,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
            <TextView
+               android:id="@+id/txtPrice"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:textSize="25sp"
@@ -51,9 +52,11 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_location_on"/>
             <TextView
+                android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="West minster, Londom"
+                android:padding="2dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18dp"
                 android:textColor="@color/primaryText"/>
@@ -67,7 +70,9 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_ac_unit"/>
             <TextView
+                android:id="@+id/txtDetailSquareFeet"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
                 android:layout_height="wrap_content"
                 android:text="3200 sqft"
                 android:layout_marginLeft="5dp"
@@ -76,12 +81,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_local_taxi"
+                android:src="@drawable/ic_bed"
                 android:layout_marginLeft="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4 bedrooms"
+                android:layout_marginTop="2dp"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/primaryText"/>
         </LinearLayout>
@@ -93,12 +99,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_favorite_border"/>
+
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3200 sqft"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/primaryText"/>
+                android:layout_marginTop="2dp"
+                android:text="324 Favourite"
+                android:textColor="@color/primaryText" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -110,6 +118,7 @@
                 android:layout_height="wrap_content"
                 android:text="23 Reviewers"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/primaryText"/>
         </LinearLayout>
 

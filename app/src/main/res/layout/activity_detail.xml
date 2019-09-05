@@ -15,12 +15,13 @@
             <RelativeLayout
                 android:id="@+id/imgLayout"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
 
                 <ImageView
+                    android:id="@+id/ivBackground"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="300dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/room" />
 
@@ -58,20 +59,28 @@
                     <!--android:layout_alignParentBottom="true"-->
                     <!--android:layout_marginTop="50dp"-->
                     <!--/>-->
+                <include layout="@layout/detail_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"
+                   />
             </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:layout_margin="10dp">
-            <include layout="@layout/detail_card_view"/>
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_margin="10dp">-->
+            <!--<include layout="@layout/detail_card_view"/>-->
+            <!--<requestFocus></requestFocus>-->
+        <!--</LinearLayout>-->
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:id="@+id/buttons"
                 android:layout_width="match_parent"
@@ -79,10 +88,10 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="15dp"
                 android:background="@android:color/transparent">
                 <android.support.design.button.MaterialButton
-                    android:layout_width="120dp"
+                    android:layout_width="150dp"
                     android:layout_height="60dp"
                     android:textAllCaps="false"
                     android:text="Add Favourite"
@@ -91,7 +100,7 @@
                     android:gravity="center"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
                 <android.support.design.button.MaterialButton
-                    android:layout_width="120dp"
+                    android:layout_width="150dp"
                     android:layout_height="60dp"
                     android:textAllCaps="false"
                     android:text="Book Now"
@@ -102,11 +111,11 @@
                     android:layout_marginLeft="15dp"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
             </LinearLayout>
-
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@id/buttons">
+                android:layout_height="wrap_content"
+                android:layout_above="@id/buttons"
+                android:fillViewport="true">
                 <!--Scrollable content here-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -114,12 +123,16 @@
                     android:orientation="vertical"
                     android:layout_margin="10dp">
                     <TextView
+                        android:id="@+id/tvDetail"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:padding="2dp"
                         android:text="@string/large_text"
-                       android:textColor="@color/primaryText"/>
+                        android:textColor="@color/primaryText"/>
                 </LinearLayout>
             </ScrollView>
+
         </RelativeLayout>
 
     </LinearLayout>
